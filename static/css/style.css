@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poiret+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  color: #0e4f99;
+  font-size: 4rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 1rem 0.8rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-family: 'Poiret One', cursive;
+}
+
+h3 {
+  color: rgba(240, 83, 56, 0.89);
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 1rem 0.8rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-family: 'Poiret One', cursive;
+}
+
+h4 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #035e38;
+  font-weight: bold;
+  font-family: 'Poiret One', cursive;
+}
+
+p {
+  color: #0e4f99;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem;
+}
+
+.mybtn1 {
+  text-decoration: none;
+  color: #0e4f99;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 2rem 1rem;
+  border: 2px solid #0e4f99;
+  border-radius: 3rem;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-transform: capitalize;
+}
+
+.mybtn1:hover {
+  color: #fff;
+  background-color: #0e4f99;
+}
+
+.mybtn2 {
+  text-decoration: none;
+  color: #035e38;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 2rem 1rem;
+  border: 2px solid #035e38;
+  border-radius: 3rem;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-transform: capitalize;
+}
+
+.mybtn2:hover {
+  color: #fff;
+  background-color: #035e38;
+}
+
+.mybtn3 {
+  margin: 1rem 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border: 0.2rem solid rgba(240, 83, 56, 0.89);
+  color: rgba(240, 83, 56, 0.89);
+  border-radius: 2rem;
+  background: transparent;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mybtn3:hover {
+  background-color: rgba(240, 83, 56, 0.89);
+  color: white;
+  font-weight: bold !important;
+}
+
+.sub-button {
+  border: 2px solid #0e4f99;
+  border-radius: 3rem;
+  font-weight: bold;
+  color: #0e4f99;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.sub-button:hover {
+  color: #fff;
+  background-color: #0e4f99;
+}
+
+.myalert_message {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.mynavbar {
+  background-color: #fff;
+  border-radius: 3rem;
+}
+
+.sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.mynav-brand {
+  font-size: 2.5rem;
+  color: #0e4f99 !important;
+  font-weight: bold;
+}
+
+.mylogo-img {
+  width: 7rem;
+  height: auto;
+  margin: 0px;
+  padding: 0%;
+}
+
+.nav-time {
+  font-size: 1.5rem;
+  list-style: none;
+  color: #0e4f99;
+  font-weight: 600;
+  margin: 0.5rem 10rem;
+  padding: 0 1rem;
+}
+
+.nav-btn {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 0.5rem 1.2rem;
+  padding: 0.2rem 1.2rem;
+  border-radius: 3rem;
+  color: #0e4f99 !important;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.nav-btn:hover {
+  color: #fff !important;
+  background-color: #0e4f99;
+}
+
+.header-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+}
+
+.brand-name {
+  text-transform: none;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #035e38;
+  border: 1px solid #035e38;
+  border-radius: 4rem;
+  padding: 0rem 1.3rem;
+  margin: 1rem 0.5rem;
+  text-shadow: 1px 1px 3px #035e38;
+  font-family: 'Poiret One', cursive;
+}
+
+.dflex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-arrow {
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+          clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.img-round50 {
+  border-radius: 50%;
+}
+
+.services-section {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(#edf7eb));
+  background: linear-gradient(to right, white, #edf7eb);
+  width: 100vw;
+  height: auto;
+  border-radius: 5rem;
+  margin-bottom: 0;
+}
+
+.mycard {
+  border: 3px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  min-height: 45rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 4rem;
+  margin-bottom: 2rem;
+}
+
+.mycard:hover {
+  background-color: #fff;
+  -webkit-transform: translatey(-10.5px);
+          transform: translatey(-10.5px);
+  cursor: pointer;
+  -webkit-box-shadow: 6px 6px 5px 3px #035e38;
+          box-shadow: 6px 6px 5px 3px #035e38;
+}
+
+.mycard-img {
+  margin: 0px, 0px;
+  padding: 0px, 0px;
+  width: 90%;
+  height: auto;
+  border-radius: 4rem;
+}
+
+.mycard-title {
+  margin-top: 1.5rem;
+}
+
+.mycard-text {
+  margin-top: 0px;
+  padding: 0.2rem 1rem;
+}
+
+.about-section {
+  margin-top: -9px;
+  width: 100vw;
+  height: auto;
+  background: -webkit-gradient(linear, left top, right top, from(white), to(#dfebf7));
+  background: linear-gradient(to right, white, #dfebf7);
+  border-radius: 5rem;
+}
+
+.box {
+  border: 3px solid #fff;
+  border-radius: 4rem;
+  margin: 3rem;
+  cursor: pointer;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.box:hover {
+  background-color: #fff;
+  -webkit-transform: translatey(-10.5px);
+          transform: translatey(-10.5px);
+  cursor: pointer;
+  -webkit-box-shadow: 6px 6px 5px 3px #0e4f99;
+          box-shadow: 6px 6px 5px 3px #0e4f99;
+}
+
+.contact-us {
+  width: 100vw;
+  height: auto;
+}
+
+.myicon {
+  color: #0e4f99;
+  font-size: 3rem;
+}
+
+.contact-data {
+  margin: 2rem;
+}
+
+.mycontact {
+  font-size: 1.7rem;
+  color: #000;
+  font-weight: 600;
+  padding: 1rem 2rem;
+}
+
+.whatsapplink {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #2ea72e;
+}
+
+.whatsapp {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #2ea72e;
+  margin-left: 2rem;
+  font-weight: bolder;
+}
+
+.whatsappIcon {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #2ea72e;
+}
+
+.form-text, label {
+  font-size: 1.5rem !important;
+}
+
+.map {
+  border-radius: 4rem;
+  margin: 1rem 0.3rem;
+  margin-bottom: 0px;
+}
+
+footer {
+  margin-top: auto;
+  -webkit-clip-path: polygon(0 0, 89% 0, 100% 50%, 89% 100%, 0 100%, 0% 50%);
+          clip-path: polygon(0 0, 89% 0, 100% 50%, 89% 100%, 0 100%, 0% 50%);
+}
+
+.myfooter {
+  width: 100%;
+  height: 20vh;
+  background-color: #0e4f99;
+  margin-top: auto;
+}
+
+.footer-icon {
+  margin: 0.5rem 0.5rem;
+  color: #fff;
+  padding: 0.5rem 0.5rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.footer-link {
+  margin: 0.5rem 2rem;
+  color: #fff;
+  padding: 0.2rem 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.footer-link:hover {
+  color: #000;
+  font-weight: bold;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.footer-note {
+  color: #fff;
+  font-weight: lighter;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+  .footer-link {
+    margin: 0.5rem 0.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
