@@ -44,7 +44,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 {% for service in services %}
-                                <li><a class="dropdown-item nav-btn" href="#services">{{service.title}}</a></li>
+                                <li><a class="dropdown-item nav-btn" href="/{{service.url}}">{{service.title}}</a></li>
                                 {% endfor %}
                             </ul>
                         </li>
@@ -58,8 +58,8 @@
                             <a class="nav-link nav-btn" href="#contact-us">Contact Us</a>
                         </li>
                     </ul>
-                    <a href="#" class="mybtn1">Sign in</a>
-                    <a href="#" class="mybtn2">Sign up</a>
+                    <a href="#" class="mybtn-sm-1">Sign in</a>
+                    <a href="#" class="mybtn-sm-2">Sign up</a>
                     <li class="nav-time">05:00 PM, Tuesday</li>
                     <!-- <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -80,6 +80,29 @@
 {% endif %}
 
     {% block content %}{% endblock content %}
+
+{% comment %} footer start here {% endcomment %}
+
+    <footer>
+        <div class="container-fluid myfooter">
+          <div class="d-flex justify-content-center align-items-center flex-row">
+            <i class="bi footer-icon bi-facebook"></i>
+            <i class="bi footer-icon bi-twitter"></i>
+            <i class="bi footer-icon bi-instagram"></i>
+          </div>
+          <div class="d-flex justify-content-center align-items-center flex-row">
+            <a class="footer-link" href="/">Home</a>
+            <a class="footer-link" href="#services">Services</a>
+            <a class="footer-link" href="#about-us">About Us</a>
+            <a class="footer-link" href="#contact-us">Contact Us</a>
+          </div>
+          <div class="d-flex justify-content-center align-items-center flex-row">
+            <p class="footer-note">Created with ❤ &copy; TechExpert Softlab Corporation</p>
+          </div>
+        </div>
+      </footer>
+
+      {% comment %} footer ends here {% endcomment %}
 
     <!-- Optional JavaScript; choose one of the two! -->
 

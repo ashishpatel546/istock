@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container aboutPreIpo">
+
+  <div class="row">
+
+    <div class="col-12 col-md-6">
+      <figure>
+        <img src="{%static 'images/ipo.jpg' %}" class="img-round50 img-fluid" %}>
+      </figure>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="container">
+        <h3>What is Pre-IPO</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem unde nam quae nihil explicabo nemo
+          accusantium alias illo repudiandae aliquid quo fugiat magnam tempore excepturi rerum dicta necessitatibus,
+          provident consequatur dolorum enim reprehenderit voluptatum laboriosam ab? Voluptates repudiandae, incidunt
+          repellat labore corporis provident blanditiis suscipit explicabo iure pariatur laborum distinctio libero
+          placeat deserunt vero, eius velit architecto est reiciendis ipsum?</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<h1>List of Available Scripts</h1>
+
+<div class="container mt-5">
+  <div class="list-all-ipo">
+
+    <table class="table table-hover table-striped">
+      <thead class="text-center">
+        <tr>
+          <th scope="col">S.No.</th>
+          <th scope="col">Script Name</th>
+          <th scope="col">Buying Price</th>
+          <th scope="col">Selling Price</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody class="text-center">
+        {% for ipo in ipoList %}
+        <tr>
+          <th scope="row">{{ipo.S_No}}</th>
+          <td class="fw-bold">{{ipo.Script_Name}}</td>
+          <td class="buyingP">{{ipo.Buying_Price}}</td>
+          <td class="sellingP">₹ {{ipo.Selling_Price}}</td>
+          <td>
+            <div class="d-flex justify-content-center align-item-center">
+              <a href="#" class="mybtn-sm-1">Buy It</a>
+              <a href="#" class="mybtn-sm-2">Sell It</a>
+              <a href="{{ipo.url}}" class="mybtn-sm-3">Know More...</a>
+            </div>
+
+          </td>
+        </tr>
+        {% endfor %}
+
+
+      </tbody>
+    </table>
+
+
+  </div>{% comment %} div end for listing {% endcomment %}
+
+</div>
+
+  <div class="container  ipoendmatter">
+  
+    <h3>We are here to give you a platform to invest your money safely</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos atque illum quidem vero deleniti quae neque commodi libero voluptatem quasi, totam sit itaque, expedita, fugiat accusamus voluptates nam vel modi ab. Est, dolores cumque nisi ab debitis beatae dolore architecto!</p>
+    <a href="#/contact-us" class="mybtn3">get in touch with us</a>
+
+  </div>
+
+
+
+{% endblock content %}

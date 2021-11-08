@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid aboutInsurance">
+
+    <div class="row">
+
+        <div class="col-12 col-md-6">
+          <div class="container">
+            <h3>Insurance is need of hours</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem unde nam quae nihil explicabo nemo
+              accusantium alias illo repudiandae aliquid quo fugiat magnam tempore excepturi rerum dicta necessitatibus,
+              provident consequatur dolorum enim reprehenderit voluptatum laboriosam ab? Voluptates repudiandae, incidunt
+              repellat labore corporis provident blanditiis suscipit explicabo iure pariatur laborum distinctio libero
+              placeat deserunt vero, eius velit architecto est reiciendis ipsum?</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <figure>
+            <img src="{%static 'images/insurance.jpg' %}" class="img-round50 img-fluid" %}>
+          </figure>
+        </div>
+
+    </div>
+
+</div> {% comment %} about insurance ended {% endcomment %}
+
+<div class="insuranceTypes container-fluid">
+
+    <h1>Choose your Insurance with best offers</h1>
+
+    {% for insurance in insurances %}
+        
+        
+        <div class="ins_individual container">
+        
+                <div class='insurance-img' {% if forloop.counter|divisibleby:2 %} style="order: {{2}};"{% endif %}>
+                    <img class="img-fluid img-round50" src="/media/{{insurance.ins_img}}" alt="ins-img">
+                </div>
+
+                <div class="ins_desc" ;>
+                        <h3>{{insurance.ins_name}}</h3>
+                        <hr>
+
+                            {{insurance.desc |safe}}
+                        <a class="mybtn3" href="/#contact-us">ask to our expert</a>
+                </div>
+        </div>
+        <hr/>
+        
+      
+        
+    {% endfor %}
+        
+        
+
+</div>
+
+{% endblock content %}

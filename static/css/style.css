@@ -36,7 +36,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-transform: capitalize;
   color: #035e38;
   font-weight: bold;
@@ -94,6 +94,7 @@ p {
   margin: 1rem 1rem;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
+  text-transform: capitalize;
   border: 0.2rem solid rgba(240, 83, 56, 0.89);
   color: rgba(240, 83, 56, 0.89);
   border-radius: 2rem;
@@ -126,6 +127,60 @@ p {
   background-color: #0e4f99;
 }
 
+.mybtn-sm-1 {
+  border: 2px solid #0e4f99;
+  border-radius: 3rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #0e4f99;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  padding: 0.2rem 0.5rem;
+  margin: 0 1rem;
+}
+
+.mybtn-sm-1:hover {
+  color: #fff;
+  background-color: #0e4f99;
+}
+
+.mybtn-sm-2 {
+  border: 2px solid #035e38;
+  border-radius: 3rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #035e38;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  padding: 0.2rem 0.5rem;
+  margin: 0 1rem;
+}
+
+.mybtn-sm-2:hover {
+  color: #fff;
+  background-color: #035e38;
+}
+
+.mybtn-sm-3 {
+  border: 2px solid rgba(240, 83, 56, 0.89);
+  border-radius: 3rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgba(240, 83, 56, 0.89);
+  font-size: 1.5rem;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  padding: 0.2rem 0.5rem;
+  margin: 0 1rem;
+}
+
+.mybtn-sm-3:hover {
+  color: #fff;
+  background-color: rgba(240, 83, 56, 0.89);
+}
+
 .myalert_message {
   font-weight: bold;
   font-size: 1.5rem;
@@ -134,6 +189,8 @@ p {
 .mynavbar {
   background-color: #fff;
   border-radius: 3rem;
+  margin-left: -8px !important;
+  width: auto;
 }
 
 .sticky {
@@ -145,13 +202,14 @@ p {
 }
 
 .mynav-brand {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #0e4f99 !important;
   font-weight: bold;
+  margin-left: 10px;
 }
 
 .mylogo-img {
-  width: 7rem;
+  width: 5rem;
   height: auto;
   margin: 0px;
   padding: 0%;
@@ -162,7 +220,8 @@ p {
   list-style: none;
   color: #0e4f99;
   font-weight: 600;
-  margin: 0.5rem 10rem;
+  margin-left: 10rem;
+  margin-right: 3rem;
   padding: 0 1rem;
 }
 
@@ -349,10 +408,55 @@ p {
   color: #2ea72e;
   margin-left: 2rem;
   font-weight: bolder;
+  border: 2px solid #2ea72e;
+  border-radius: 3rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  -webkit-animation: blink 1.5s infinite;
+          animation: blink 1.5s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: #2ea72e;
+    color: #fff;
+  }
+  50% {
+    background-color: #fff;
+    color: #035e38;
+  }
+  100% {
+    background-color: #2ea72e;
+    color: #fff;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: #2ea72e;
+    color: #fff;
+  }
+  50% {
+    background-color: #fff;
+    color: #035e38;
+  }
+  100% {
+    background-color: #2ea72e;
+    color: #fff;
+  }
+}
+
+.whatsapp:hover {
+  color: #fff;
+  background-color: #2ea72e;
+  -webkit-animation: none;
+          animation: none;
 }
 
 .whatsappIcon {
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-decoration: none;
   color: #2ea72e;
 }
@@ -418,5 +522,136 @@ footer {
   .footer-link {
     margin: 0.5rem 0.5rem;
   }
+}
+
+.list-all-ipo th {
+  font-size: 2rem;
+}
+
+.list-all-ipo tr {
+  font-size: 1.5rem;
+}
+
+.scriptDetails {
+  font-size: 1.5rem;
+}
+
+.buyingP {
+  color: #0e4f99 !important;
+  font-weight: 700;
+}
+
+.sellingP {
+  color: #035e38 !important;
+  font-weight: 700;
+}
+
+.ipoendmatter {
+  margin-bottom: 5rem !important;
+  margin-top: 5rem !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutInsurance {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: auto !important;
+  margin-top: 5rem;
+}
+
+.insurance-img {
+  max-width: 40%;
+  height: auto;
+}
+
+.ins_desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.45rem;
+  max-width: 40%;
+}
+
+.insuranceTypes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3rem 0rem;
+  background-color: aliceblue;
+}
+
+.ins_individual {
+  margin: 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border: 4px solid #fff;
+  border-radius: 3rem;
+}
+
+.ins_individual:hover {
+  background-color: #fff;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 11px 1px 10px 6px #0e4f99;
+          box-shadow: 11px 1px 10px 6px #0e4f99;
+  border-radius: 3rem;
+}
+
+.ins_individual:nth-child(odd) .insurance-img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.ins_individual:nth-child(odd) .ins_desc {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 /*# sourceMappingURL=style.css.map */

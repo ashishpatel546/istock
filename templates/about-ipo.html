@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+{% for ipoData in ipodatas  %}
+
+<div class="container-fluid">
+
+    <div class="row">
+        {% comment %} left div start {% endcomment %}
+        <div class="col-12 col-md-6">
+        
+            <div class="left d-flex justify-content-center align-item-center">
+                <figure>
+                    <img class='img-fluid img-round50'  src="/media/{{ipoData.Script_pic}}" alt="ipo-img">
+                </figure>
+            </div>
+
+        </div>
+        {% comment %} left div end {% endcomment %}
+
+        {% comment %} right div start {% endcomment %}
+
+        <div class="col-12 col-md-6">
+        
+            <h1>{{ipoData.Script_Name}}</h1>
+            <div class="scriptDetails">
+                {{ipoData.Desc |safe}}
+            </div>
+
+            <div class="dflex-center">
+    <a href="" class="mybtn1">Buy</a>
+    <a href="" class="mybtn2">Sell</a>
+    <a href="/#contact-us" class="mybtn3">Need Help</a>
+    </div>
+
+        </div>
+
+        {% comment %} right div end {% endcomment %}
+    
+    </div>
+
+    
+
+{% endfor %}
+
+</div>
+
+
+
+
+{% endblock content %}

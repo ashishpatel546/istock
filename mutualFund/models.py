@@ -15,6 +15,8 @@ class Service(models.Model):
     
     def image_tag(self):
         return format_html(f'<img src="/media/{self.service_pic}" alt="myimg" style = "width:50px; border-radius:50%;"/>')
+    def description(self):
+        return self.desc[0:70]
 
 class CustomerQuery(models.Model):
     query_id= models.BigAutoField(primary_key=True, auto_created=True)

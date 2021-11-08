@@ -33,12 +33,15 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'mutualFund.apps.MutualfundConfig',
+    'preipo.apps.PreipoConfig',
+    'insurance.apps.InsuranceConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tinymce'
 ]
 
 MIDDLEWARE = [

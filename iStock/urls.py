@@ -20,5 +20,8 @@ from iStock.settings import MEDIA_ROOT, MEDIA_URL
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('mutualFund.urls') )
+    path('pre-ipo/',include('preipo.urls')),
+    path('insurance/', include('insurance.urls')),
+    path('', include('mutualFund.urls') ),
+    path('tinymce/', include('tinymce.urls'))
 ] + static(MEDIA_URL, document_root = MEDIA_ROOT)
